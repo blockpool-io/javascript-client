@@ -23,7 +23,7 @@ const browserConfig = {
   },
   output: {
     ...format(pkg.browser),
-    library: 'ArkEcosystemClient',
+    library: 'BlockpoolClient',
     libraryTarget: 'umd',
     umdNamedDefine: true,
     globalObject: 'this'

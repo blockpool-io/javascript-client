@@ -258,7 +258,7 @@ describe('API - Client', () => {
         const port = 10101
         const peerConfig = {
           plugins: {
-            '@arkecosystem/core-api': { enabled: true, port }
+            '@blockpool-io/core-api': { enabled: true, port }
           }
         }
         httpMock.onGet(`http://${peer.ip}:${peer.port}/config`).reply(200, { data: peerConfig })
@@ -274,7 +274,7 @@ describe('API - Client', () => {
       it('should return `null`', async () => {
         const peerConfig = {
           plugins: {
-            '@arkecosystem/core-other-plugin': { enabled: true }
+            '@blockpool-io/core-other-plugin': { enabled: true }
           }
         }
         httpMock.onGet(/http.*\/config/).reply(200, { data: peerConfig })
@@ -287,7 +287,7 @@ describe('API - Client', () => {
       it('should return `null`', async () => {
         const peerConfig = {
           plugins: {
-            '@arkecosystem/core-api': { enabled: false }
+            '@blockpool-io/core-api': { enabled: false }
           }
         }
         httpMock.onGet(/http.*\/config/).reply(200, { data: peerConfig })
@@ -309,7 +309,7 @@ describe('API - Client', () => {
     const port = 10101
     const peerConfig = {
       plugins: {
-        '@arkecosystem/core-api': { enabled: true, port }
+        '@blockpool-io/core-api': { enabled: true, port }
       }
     }
 

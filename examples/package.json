@@ -1,11 +1,11 @@
 {
   "private": true,
-  "name": "ark-client-examples",
+  "name": "bpl-client-examples",
   "version": "1.0.0",
-  "description": "Ark JavaScrip examples",
+  "description": "Blockpool JavaScript examples",
   "license": "MIT",
   "dependencies": {
-    "@arkecosystem/client": "^0.1.16",
-    "@arkecosystem/crypto": "^0.2.5"
+    "@blockpool-io/client": "^0.1.16",
+    "@blockpool-io/crypto": "^0.2.5"
   }
 }

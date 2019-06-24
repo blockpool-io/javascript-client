@@ -1,4 +1,4 @@
-# Ark - Client
+# Blockpool - Client
 
 <p align="center">
     <img src="./banner.png?sanitize=true" />
@@ -9,13 +9,13 @@
 ### Node.js
 
 ```bash
-yarn add @arkecosystem/client
+yarn add @blockpool-io/client
 ```
 
 If you want to use the CDN version:
 
 ```html
-<script src="https://unpkg.com/@arkecosystem/client/dist/index.umd.js"></script>
+<script src="https://unpkg.com/@blockpool-io/client/dist/index.umd.js"></script>
 ```
 
 ## Usage
@@ -23,17 +23,17 @@ If you want to use the CDN version:
 Import the library in Node.js:
 
 ```
-import ArkEcosystemClient from @arkecosystem/client
+import BplClient from @blockpool-io/client
 ```
 or
 ```
-const ArkEcosystemClient require('@arkecosystem/client')
+const BplClient = require('@blockpool-io/client')
 ```
 
 Use the library:
 
 ```
-const client = new ArkEcosystemClient('<your host here>')
+const client = new BplClient('<your host here>')
 ```
 
 ### Examples
@@ -41,7 +41,7 @@ There are more examples in the `examples` folder.
 
 ## Security
 
-If you discover a security vulnerability within this package, please send an e-mail to security@ark.io. All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within this package, please send an e-mail to support@blockpool.io. All security vulnerabilities will be promptly addressed.
 
 ## Credits
 
@@ -53,4 +53,5 @@ If you discover a security vulnerability within this package, please send an e-m
 
 ## License
 
+[MIT](LICENSE) © [Blockpool](https://blockpool.io)
 [MIT](LICENSE) © [ArkEcosystem](https://ark.io)
