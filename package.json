@@ -1,7 +1,7 @@
 {
 	"name": "@blockpool-io/client",
 	"description": "A simple TypeScript API client for the Blockpool Blockchain.",
-	"version": "2.0.1",
+	"version": "2.0.2",
 	"contributors": [],
 	"license": "MIT",
 	"files": [
