@@ -1,43 +1,32 @@
 # Blockpool - Client
 
 <p align="center">
-    <img src="./banner.png?sanitize=true" />
+    <img src="./banner.png" />
 </p>
 
-## Installation
+> Lead Maintainer: [Brian Faust](https://github.com/faustbrian)
 
-### Node.js
+## Installation
 
 ```bash
 yarn add @blockpool-io/client
 ```
 
-If you want to use the CDN version:
-
-```html
-<script src="https://unpkg.com/@blockpool-io/client/dist/index.umd.js"></script>
-```
-
 ## Usage
 
-Import the library in Node.js:
+```ts
+import { Connection } from "@arkecosystem/client";
 
-```
-import BplClient from @blockpool-io/client
-```
-or
-```
-const BplClient = require('@blockpool-io/client')
-```
+const init = async () => {
+	const connection: Connection = new Connection("https://dexplorer.ark.io/api/v2");
 
-Use the library:
+	console.log(await connection.api("blocks").all())
+};
 
-```
-const client = new BplClient('<your host here>')
+init();
 ```
 
-### Examples
-There are more examples in the `examples` folder.
+See [tests](https://github.com/ArkEcosystem/javascript-client/tree/master/__tests__/resources) for more examples.
 
 ## Security
 
@@ -45,11 +34,7 @@ If you discover a security vulnerability within this package, please send an e-m
 
 ## Credits
 
-- [Brian Faust](https://github.com/faustbrian)
-- [Lúcio Rubens](https://github.com/luciorubeens)
-- [Alex Barnsley](https://github.com/alexbarnsley)
-- [Juan A. Martín](https://github.com/j-a-m-l)
-- [All Contributors](../../../../contributors)
+This project exists thanks to all the people who [contribute](../../contributors).
 
 ## License
 
