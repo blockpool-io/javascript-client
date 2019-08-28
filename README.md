@@ -1,56 +1,42 @@
-# Ark - Client
+# Blockpool - Client
 
 <p align="center">
-    <img src="./banner.png?sanitize=true" />
+    <img src="./banner.png" />
 </p>
+
+> Lead Maintainer: [Brian Faust](https://github.com/faustbrian)
 
 ## Installation
 
-### Node.js
-
 ```bash
-yarn add @arkecosystem/client
-```
-
-If you want to use the CDN version:
-
-```html
-<script src="https://unpkg.com/@arkecosystem/client/dist/index.umd.js"></script>
+yarn add @blockpool-io/client
 ```
 
 ## Usage
 
-Import the library in Node.js:
+```ts
+import { Connection } from "@arkecosystem/client";
 
-```
-import ArkEcosystemClient from @arkecosystem/client
-```
-or
-```
-const ArkEcosystemClient require('@arkecosystem/client')
-```
+const init = async () => {
+	const connection: Connection = new Connection("https://dexplorer.ark.io/api/v2");
 
-Use the library:
+	console.log(await connection.api("blocks").all())
+};
 
-```
-const client = new ArkEcosystemClient('<your host here>')
+init();
 ```
 
-### Examples
-There are more examples in the `examples` folder.
+See [tests](https://github.com/ArkEcosystem/javascript-client/tree/master/__tests__/resources) for more examples.
 
 ## Security
 
-If you discover a security vulnerability within this package, please send an e-mail to security@ark.io. All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within this package, please send an e-mail to support@blockpool.io. All security vulnerabilities will be promptly addressed.
 
 ## Credits
 
-- [Brian Faust](https://github.com/faustbrian)
-- [Lúcio Rubens](https://github.com/luciorubeens)
-- [Alex Barnsley](https://github.com/alexbarnsley)
-- [Juan A. Martín](https://github.com/j-a-m-l)
-- [All Contributors](../../../../contributors)
+This project exists thanks to all the people who [contribute](../../contributors).
 
 ## License
 
+[MIT](LICENSE) © [Blockpool](https://blockpool.io)
 [MIT](LICENSE) © [ArkEcosystem](https://ark.io)
